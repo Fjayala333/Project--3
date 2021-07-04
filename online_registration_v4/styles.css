@@ -15,11 +15,15 @@ body {
     padding: 25px 0;
     color: white;
     text-align: center;
+    font-size: 1.5em;
 }
 h1 {
     font-size: 1.25em;
     color: rgba(6,65,90);
     text-align: center;
+}
+hr {
+    border: 0;
 }
 p {
     margin: 5px 10px;
@@ -27,22 +31,19 @@ p {
     border-bottom: 5px solid rgba(6,65,90);
     text-align: center;
 }
-h2 {
-    margin: 0 10px;
+legend {
+    width: 100%;
+    padding: 20px 5px 0;
     border-top: 3px solid;
-    padding: 20px 5px;
     color: rgba(6,65,90);
+    font-size: 1.5em;
+    font-weight: bold;
 }
 span {
     margin-left: 20%;
     align-content: center;
-    font-weight:lighter;
+    font-weight:100;
 }
-
-
-
-
-
 
 
 fieldset {
@@ -83,9 +84,7 @@ select:focus,
 textarea:focus {
     border: 2px solid #204166;
 }
-legend {
-    padding-left: 10px;
-}
+
 
 ::placeholder {
     text-align: end;

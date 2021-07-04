@@ -18,10 +18,12 @@
         <p>Get the latest news on how your code is doing right in your inbox</p>
     </div>
 
-        <h2>Contact Information</h2>
+        
 
         <form action="index.html" method="post">
             <fieldset>
+                <legend>Contact Information</legend>
+
                 <label for="name">Full Name</label>
                 <input type="text" id="name" name="user-name" placeholder="Required" required><br>
 
@@ -46,9 +48,9 @@
                 <input type="text" id="zip" name="user-zip" placeholder="Optional">
             </fieldset>
 
-        <h2>Newsletter</h2>
-        <legend>Select the newsletters you would like to receive</legend>
             <fieldset>
+                <legend>Newsletter</legend>
+                <hr>Select the newsletters you would like to receive</hr><br>
                 <input type="checkbox" id="html" value="html_news" name="user_news">
                 <label for="html">HTML News</label><br>
 
@@ -58,10 +60,8 @@
                 <input type="checkbox" id="java" value="java_news" name="user_news">
                 <label for="java">JavaScript News</label>
                 
-            </fieldset>
+                <hr>Newsletter format</hr><br>
 
-            <fieldset>
-                <legend>Newsletter format</legend>
                 <input type="radio" id="htmln" value="htmln" name="user_format">
 
                 <label for="htmln">HTML</label><br>
