@@ -2,13 +2,15 @@
 
 * {
     box-sizing: border-box;
-    font-size: 18px;
-    font-family: 'Nunito Sans', sans-serif;
+    
 }
 
 body {
     background: whitesmoke;
     margin: 0 auto;
+    max-width: 768px;
+    font-size: 18px;
+    font-family: 'Nunito Sans', sans-serif;
 }
 .main-header {
     background: rgba(6,65,90);
@@ -22,8 +24,9 @@ h1 {
     color: rgba(6,65,90);
     text-align: center;
 }
-hr {
-    border: 0;
+
+h2 {
+    color: rgba(6,65,90)
 }
 p {
     margin: 5px 10px;
@@ -44,16 +47,19 @@ span {
     align-content: center;
     font-weight:100;
 }
-
-
 fieldset {
-    display:block;
-    border: 0;
+    border: none;
 }
 
 
+.contact-info .flex-pair {
+    display: flex;
+    flex-direction: column;
+  }
+
+
 input {
-    display: block;
+
     width: 100%;
     margin: 5px 0;
     padding: 8px;
@@ -82,7 +88,7 @@ input[type="email"]:focus,
 input[type="tel"]:focus,
 select:focus,
 textarea:focus {
-    border: 2px solid #204166;
+    border: 2px solid #47596e;
 }
 
 
@@ -93,9 +99,9 @@ textarea:focus {
     font-size: 15px;
 }
  select {
-     display: block;
+     
      width: 100%;
-     margin: 5px 0;
+     margin: 15px 0;
      padding: 8px;
      font-size: 18px;
      color: rgb(156, 152, 152);
@@ -109,7 +115,7 @@ textarea {
     border-radius: 5px
 }
 #zip {
-    width: 50%;
+    max-width: 50%;
 }
 
 button:hover {
@@ -129,25 +135,33 @@ button {
 
 @media(min-width:768px) {
 
+.contact-info .flex-pair {
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.contact-info input,
+.contact-info select {
+    flex-grow: 1;
+    flex-basis: 75%;
+}
+.contact-info label {
+    flex-basis: 25%;
+    margin: auto 0;
+}
+form,
+.sign-up {
+    margin: 0 auto;
+    width: 70%;
+}
 .main-header {
     margin-bottom: 20px;
 }
-
-
-
-
-h1,
-p,
-h2,
-form {
-    max-width: 60%;
-    margin: 3px auto;
-}
 #zip {
-    width: 25%;
+    max-width: 25%;
+}
+
 }
 
 
-
-}
 
