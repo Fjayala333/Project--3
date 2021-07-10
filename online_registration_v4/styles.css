@@ -42,9 +42,8 @@ legend {
     font-size: 1.5em;
     font-weight: bold;
 }
-span {
-    margin-left: 20%;
-    align-content: center;
+footer {
+    text-align: center;
     font-weight:100;
 }
 fieldset {
@@ -159,6 +158,11 @@ form,
 }
 #zip {
     max-width: 25%;
+} 
+footer {
+    text-align: center;
+    margin: 0 auto;
+    padding: 15px;
 }
 
 }
